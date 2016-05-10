@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>ng-conf 2016 Style</title>
+	<script src="node_modules/zone.js/dist/zone.js"></script>
+	<script src="node_modules/reflect-metadata/Reflect.js"></script>
+	<script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+      System.config({
+            map: {
+                'rxjs': 'node_modules/rxjs',
+                '@angular': 'node_modules/@angular',
+                'app': 'app'
+            },
+            packages: {
+                'app': {
+                    main: 'main.js',
+                    defaultExtension: 'js'
+                },
+                '@angular/core': {
+                    main: 'index.js',
+                    defaultExtension: 'js'
+                },
+                '@angular/compiler': {
+                    main: 'index.js',
+                    defaultExtension: 'js'
+                },
+                '@angular/common': {
+                    main: 'index.js',
+                    defaultExtension: 'js'
+                },
+                '@angular/platform-browser': {
+                    main: 'index.js',
+                    defaultExtension: 'js'
+                },
+                '@angular/platform-browser-dynamic': {
+                    main: 'index.js',
+                    defaultExtension: 'js'
+                },
+                'rxjs': {
+                    defaultExtension: 'js'
+                }
+            }
+        });
+      System.import('app')
+            .then(null, console.error.bind(console));
+    </script>
+    <style>
+        body {
+            background-color: #0c4eb2;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <style-app>Loading...</style-app>
+</body>
+
+</html>
